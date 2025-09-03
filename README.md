@@ -55,7 +55,33 @@ This project uses **Python + Selenium + Pandas** to automate common WhatsApp Web
 - **Local control:** Runs on your machine in a regular browser session; you decide timing, content, and recipients.
 
 >
+## ✨ Features
+- **Spreadsheet-driven**: read recipients & messages from CSV/Excel  
+- **Personalized text**: use a message column per row (e.g., includes customer name)  
+- **Local & visible**: runs in your Chrome session after **QR login**  
+- **Console logs**: see progress/success/failure while sending
 
+## 🎯 Design Decisions & Assumptions
+- Uses **WhatsApp Web**; requires manual QR authentication
+- Chrome + **ChromeDriver** is assumed (or use `webdriver-manager` to auto-manage)
+- Input file has columns like **`Phone Number`** and **`Message`** (sample below)
+- Intent is controlled, consent-based messaging—**no bulk spam**
+
+## 🧪 Installation & Getting Started
+```bash
+# Clone your repo
+git clone https://github.com/uzair1964/Automate-WhatsApp
+cd Automate-WhatsApp
+
+# (Optional) create a virtual environment
+# python -m venv .venv && source .venv/bin/activate      # macOS/Linux
+# .venv\Scripts\activate                                 # Windows
+
+# Install dependencies (Option A: if requirements.txt exists)
+pip install -r requirements.txt
+
+# Or Option B: install key packages directly
+pip install selenium pandas openpyxl webdriver-manager
 ## Features
 - Send personalized text messages to a list of numbers from an Excel/CSV (e.g., `Phone Number`, optional `Message`).  
 - Drive WhatsApp Web via Chrome/Chromedriver using Selenium after a QR code scan. :contentReference[oaicite:4]{index=4}
