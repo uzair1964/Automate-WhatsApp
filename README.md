@@ -19,7 +19,30 @@
 </p>
 
 ---
+## 🧭 Introduction
+**Automate-WhatsApp** is a local Python automation that drives **WhatsApp Web** in your browser to send **personalized messages** from a spreadsheet (CSV/Excel).  
+It uses **Selenium** to open chats and **pandas** to read rows, helping you run controlled, one-by-one outreach without saving every number to contacts.
 
+> ⚠️ **Important:** Automating WhatsApp may violate WhatsApp’s Terms of Service. This project is for **educational purposes** only. Obtain consent, avoid spam, and follow local laws. The code does **not** bypass WhatsApp policies or limits.
+
+## 🛠️ Project Type
+Backend (local browser automation with Python + Selenium)
+
+## 🚀 Deployed App
+- Frontend: Not applicable  
+- Backend: Python script / Jupyter notebook  
+- Browser: Google Chrome + WhatsApp Web  
+- Driver: ChromeDriver (matching your Chrome version)
+
+## 📁 Directory Structure
+```Automate-WhatsApp/
+├─ README.md
+├─ send_whatsapp_messages.py # main automation script
+├─ whatsapp.ipynb # optional exploratory notebook
+├─ contacts.xlsx # example: Phone Number, Message
+└─ assets/
+└─ logo.png (optional)
+```
 ## Overview
 This project uses **Python + Selenium + Pandas** to automate common WhatsApp Web tasks like opening chats and sending personalized messages read from a file (e.g., Excel/CSV). It runs locally in your browser and requires a one-time QR scan to authenticate your WhatsApp Web session. :contentReference[oaicite:0]{index=0}
 
@@ -31,9 +54,7 @@ This project uses **Python + Selenium + Pandas** to automate common WhatsApp Web
 - **Reproducible outreach:** Read recipients and messages from a spreadsheet to keep runs auditable and repeatable.  
 - **Local control:** Runs on your machine in a regular browser session; you decide timing, content, and recipients.
 
-> ⚠️ **Important:** Automating WhatsApp may violate WhatsApp’s Terms of Service. This repository is for **educational purposes** only. Use responsibly, obtain consent from recipients, and follow local regulations. :contentReference[oaicite:3]{index=3}
-
----
+>
 
 ## Features
 - Send personalized text messages to a list of numbers from an Excel/CSV (e.g., `Phone Number`, optional `Message`).  
