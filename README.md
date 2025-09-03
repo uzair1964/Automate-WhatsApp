@@ -97,8 +97,11 @@ Install Python deps:
 pip install selenium pandas
 
 python send_whatsapp_messages.py
-```
-Scan the QR code in the browser window and let the automation send the messages.
 
+
+-Python 3.x
+-Selenium (browser automation)
+-pandas / openpyxl (spreadsheet I/O)
+Jupyter Notebook (optional exploration)
 ## Disclaimer
 This code is provided for learning purposes. Use it responsibly and comply with WhatsApp's terms and local laws.
